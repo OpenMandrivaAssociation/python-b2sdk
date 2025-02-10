@@ -11,6 +11,7 @@ BuildRequires:	python%{pyver}dist(logfury)
 BuildRequires:	python%{pyver}dist(requests)
 BuildRequires:	python%{pyver}dist(annotated-types)
 BuildRequires:	python%{pyver}dist(typing-extensions)
+BuildRequires:	python%{pyver}dist(pdm-backend)
 BuildSystem:	python
 BuildArch:	noarch
 
