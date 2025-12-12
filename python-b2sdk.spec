@@ -1,6 +1,6 @@
 Name:		python-b2sdk
 Version:	2.8.0
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/b/b2sdk/b2sdk-%{version}.tar.gz
 Summary:	Backblaze B2 SDK
 URL:		https://pypi.org/project/b2sdk/
