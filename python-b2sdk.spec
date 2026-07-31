@@ -1,6 +1,6 @@
 Name:		python-b2sdk
-Version:	2.10.2
-Release:	2
+Version:	2.12.0
+Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/b2sdk/b2sdk-%{version}.tar.gz
 Summary:	Backblaze B2 SDK
 URL:		https://pypi.org/project/b2sdk/
@@ -19,7 +19,7 @@ BuildArch:	noarch
 Backblaze B2 SDK
 
 %prep
-%autosetup -p1 -n b2sdk-%{version}
+%autosetup -p1 -n b2sdk-2.12.0
 
 %files
 %{py_sitedir}/b2sdk
