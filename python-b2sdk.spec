@@ -11,7 +11,8 @@ BuildRequires:	python%{pyver}dist(logfury)
 BuildRequires:	python%{pyver}dist(requests)
 BuildRequires:	python%{pyver}dist(annotated-types)
 BuildRequires:	python%{pyver}dist(typing-extensions)
-BuildRequires:	python%{pyver}dist(pdm-backend)
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
 BuildSystem:	python
 BuildArch:	noarch
 
@@ -19,7 +20,7 @@ BuildArch:	noarch
 Backblaze B2 SDK
 
 %prep
-%autosetup -p1 -n b2sdk-2.12.0
+%autosetup -p1 -n b2sdk-%{version}
 
 %files
 %{py_sitedir}/b2sdk
