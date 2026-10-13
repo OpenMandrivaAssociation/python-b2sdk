@@ -1,5 +1,5 @@
 Name:		python-b2sdk
-Version:	2.12.0
+Version:	2.13.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/b2sdk/b2sdk-%{version}.tar.gz
 Summary:	Backblaze B2 SDK
@@ -13,6 +13,8 @@ BuildRequires:	python%{pyver}dist(annotated-types)
 BuildRequires:	python%{pyver}dist(typing-extensions)
 BuildRequires:	python%{pyver}dist(hatchling)
 BuildRequires:	python%{pyver}dist(hatch-vcs)
+BuildRequires:	python%{pyver}dist(pip)
+BuildRequires:	python%{pyver}dist(wheel)
 BuildSystem:	python
 BuildArch:	noarch
 
@@ -21,6 +23,9 @@ Backblaze B2 SDK
 
 %prep
 %autosetup -p1 -n b2sdk-%{version}
+
+%build -p
+export SETUPTOOLS_SCM_PRETEND_VERSION="%{version}"
 
 %files
 %{py_sitedir}/b2sdk
